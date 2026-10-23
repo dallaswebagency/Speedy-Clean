@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speedy Clean | Commercial and Residential Cleaning in Edmonton, Alberta</title>
+<meta name="description" content="Speedy Clean offers fast, careful commercial cleaning, job site cleanup, new home build cleaning and residential cleaning across Edmonton, St. Albert, Fort Saskatchewan, Leduc and Morinville.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HouseCleaning",
+  "name": "Speedy Clean",
+  "telephone": "+1-780-862-9326",
+  "email": "speedycleanedmonton@gmail.com",
+  "address": {"@type": "PostalAddress", "streetAddress": "14105 82 St NW", "addressLocality": "Edmonton", "addressRegion": "AB", "postalCode": "T5E 2V7", "addressCountry": "CA"},
+  "areaServed": ["Edmonton", "Fort Saskatchewan", "St. Albert", "Morinville", "Leduc"],
+  "priceRange": "$$"
+}
+</script>
+<style>
+:root{
+  --sky:#00A8F0;
+  --blue:#0060F8;
+  --deep:#0A3C9E;
+  --ink:#071F3F;
+  --ink-2:#0B2D5B;
+  --mist:#E8F6FE;
+  --foam:#F5FBFF;
+  --line:#CFE6F5;
+  --text:#27415E;
+  --white:#fff;
+  --serif:"EB Garamond",Georgia,serif;
+  --sans:"Figtree",system-ui,sans-serif;
+  --r:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--text);background:var(--foam);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1200px,100% - 48px);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:500;color:var(--ink);line-height:1.04;letter-spacing:-.01em}
+h2{font-size:clamp(2.2rem,4.6vw,3.8rem)}
+em{font-style:italic;color:var(--blue)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--sky);border-radius:2px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:999px;font-weight:600;font-size:.98rem;transition:.25s;cursor:pointer;border:2px solid transparent;font-family:var(--sans)}
+.btn-primary{background:linear-gradient(135deg,var(--sky),var(--blue));color:#fff;box-shadow:0 12px 28px -10px rgba(0,96,248,.6)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 18px 34px -10px rgba(0,96,248,.7)}
+.btn-ghost{border-color:var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px}
+
+/* top bar */
+.topbar{background:var(--ink);color:#BFE3F8;font-size:.84rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding:9px 0;flex-wrap:wrap}
+.topbar a:hover{color:#fff}
+.topbar span.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3DDC97;margin-right:8px;box-shadow:0 0 0 4px rgba(61,220,151,.2)}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(245,251,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.nav img.logo{height:46px;width:auto}
+.nav ul{display:flex;gap:34px;list-style:none;font-weight:500;font-size:.96rem}
+.nav ul a{position:relative;padding:6px 0}
+.nav ul a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--sky);transition:.25s}
+.nav ul a:hover::after{width:100%}
+.nav .cta{padding:12px 22px;font-size:.92rem}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;height:2px;background:var(--ink);margin:7px 10px;transition:.25s}
+
+/* hero */
+.hero{position:relative;padding:70px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-12%;top:-20%;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,rgba(0,168,240,.22),rgba(0,168,240,0) 68%)}
+.hero .wrap{display:grid;grid-template-columns:1.12fr .88fr;gap:64px;align-items:center;position:relative}
+.hero h1{font-size:clamp(3.2rem,7.6vw,6.6rem);margin:22px 0 26px}
+.hero h1 .swift{position:relative;display:inline-block}
+.hero h1 .swift::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.12em;background:linear-gradient(90deg,var(--sky),var(--blue));border-radius:8px;opacity:.35;z-index:-1}
+.hero p.lead{font-size:1.2rem;max-width:560px;margin-bottom:34px}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero-meta{display:flex;gap:34px;margin-top:46px;padding-top:26px;border-top:1px solid var(--line);flex-wrap:wrap}
+.hero-meta b{display:block;font-family:var(--serif);font-size:2rem;color:var(--ink);line-height:1}
+.hero-meta small{font-size:.82rem;letter-spacing:.04em}
+.arch{position:relative;aspect-ratio:3/4;border-radius:999px 999px 28px 28px;overflow:hidden;background:linear-gradient(160deg,var(--sky),var(--blue) 60%,var(--deep));box-shadow:0 40px 80px -30px rgba(7,31,63,.45)}
+.arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.arch::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,31,63,0) 55%,rgba(7,31,63,.35))}
+.hero-art{position:relative}
+.badge{position:absolute;z-index:3;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:0 22px 40px -16px rgba(7,31,63,.4);display:flex;align-items:center;gap:12px;font-size:.88rem;line-height:1.3}
+.badge b{color:var(--ink);display:block;font-size:.98rem}
+.badge .ic{width:42px;height:42px;border-radius:50%;background:var(--mist);display:grid;place-items:center;color:var(--blue)}
+.badge .ic svg{width:22px;height:22px}
+.badge.b1{left:-34px;bottom:90px}
+.badge.b2{right:-14px;top:70px}
+.drop-float{position:absolute;z-index:2;left:-26px;top:20px;width:84px;opacity:.95;animation:bob 5s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-12px)}}
+
+/* marquee */
+.marquee{background:linear-gradient(90deg,var(--blue),var(--sky));color:#fff;overflow:hidden;white-space:nowrap;padding:18px 0}
+.marquee .track{display:inline-flex;gap:48px;animation:slide 32s linear infinite;font-family:var(--serif);font-size:1.5rem;font-style:italic}
+.marquee .track span{display:inline-flex;align-items:center;gap:48px}
+.marquee .track span::after{content:"";width:9px;height:9px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:#fff;opacity:.8}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* timeline */
+.clock{padding:110px 0 90px}
+.clock .head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:64px}
+.clock .head p{max-width:420px}
+.line{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.line::before{content:"";position:absolute;left:0;right:0;top:34px;height:2px;background:repeating-linear-gradient(90deg,var(--sky) 0 10px,transparent 10px 20px)}
+.stop{position:relative;padding-top:80px}
+.stop .node{position:absolute;top:0;left:0;width:70px;height:70px;border-radius:50% 50% 50% 8px;transform:rotate(-45deg);background:linear-gradient(135deg,var(--sky),var(--blue));display:grid;place-items:center;box-shadow:0 14px 26px -10px rgba(0,96,248,.6)}
+.stop .node span{transform:rotate(45deg);color:#fff;font-family:var(--serif);font-size:1.6rem}
+.stop .time{display:block;font-size:.76rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:8px}
+.stop h3{font-size:1.7rem;margin-bottom:10px}
+.stop p{font-size:.98rem}
+
+/* services */
+.services{background:#fff;padding:110px 0;border-block:1px solid var(--line)}
+.services .intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:56px}
+.index{list-style:none;border-top:2px solid var(--ink)}
+.index li{display:grid;grid-template-columns:70px 1.2fr 1.4fr 180px 130px;align-items:center;gap:24px;padding:26px 0;border-bottom:1px solid var(--line);transition:.3s;position:relative}
+.index li:hover{background:linear-gradient(90deg,var(--mist),transparent);padding-left:18px}
+.index .n{font-family:var(--serif);font-size:1.5rem;color:var(--sky)}
+.index h3{font-size:clamp(1.7rem,2.6vw,2.4rem)}
+.index p{font-size:.98rem}
+.index .thumb{width:180px;aspect-ratio:4/3;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,var(--sky),var(--deep));transform:rotate(-3deg);transition:.35s}
+.index li:hover .thumb{transform:rotate(2deg) scale(1.08)}
+.index .thumb img{width:100%;height:100%;object-fit:cover}
+.index .price{justify-self:end;text-align:right;font-weight:700;color:var(--ink);font-size:.95rem}
+.index .price small{display:block;font-weight:500;color:var(--text);font-size:.78rem}
+.index .price.quote{color:var(--blue)}
+
+/* bacteria */
+.germ{position:relative;background:var(--ink);color:#C9E4F7;padding:0;overflow:hidden}
+.germ .wrap{display:grid;grid-template-columns:.9fr 1.1fr;align-items:stretch}
+.germ .pic{position:relative;min-height:520px;background:linear-gradient(160deg,var(--deep),var(--ink-2))}
+.germ .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.germ .copy{padding:100px 0 100px 70px}
+.germ .big{font-family:var(--serif);font-size:clamp(5rem,13vw,10rem);line-height:.9;background:linear-gradient(135deg,#7FD6FF,var(--sky));-webkit-background-clip:text;background-clip:text;color:transparent;margin:18px 0 14px}
+.germ h2{color:#fff;font-size:clamp(1.9rem,3.4vw,2.9rem);max-width:520px}
+.germ p{max-width:520px;margin-top:20px}
+.germ .eyebrow{color:var(--sky)}
+.germ .btn{margin-top:30px;background:#fff;color:var(--ink)}
+.germ .btn:hover{background:var(--sky);color:#fff}
+
+/* why */
+.why{padding:120px 0}
+.why .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+.why .sticky{position:sticky;top:120px;align-self:start}
+.why .sticky p{margin:22px 0 30px;max-width:380px}
+.why .photo{margin-top:34px;aspect-ratio:3/4;max-width:360px;border-radius:200px 200px 24px 24px;overflow:hidden;background:linear-gradient(160deg,var(--sky),var(--deep))}
+.why .photo img{width:100%;height:100%;object-fit:cover}
+.pledge{border-top:1px solid var(--line);padding:38px 0;display:grid;grid-template-columns:90px 1fr;gap:20px}
+.pledge:last-child{border-bottom:1px solid var(--line)}
+.pledge .q{font-family:var(--serif);font-size:4.4rem;line-height:.8;color:var(--sky)}
+.pledge h3{font-size:2rem;margin-bottom:10px}
+.pledge p{max-width:560px}
+
+/* coverage */
+.cover{background:linear-gradient(180deg,var(--mist),var(--foam));padding:110px 0;text-align:center}
+.cover h2{max-width:760px;margin:16px auto 14px}
+.cover > .wrap > p{max-width:560px;margin:0 auto 40px}
+.route{position:relative;max-width:980px;margin:0 auto}
+.route svg{width:100%;height:auto;overflow:visible}
+.route .city{font-family:var(--serif);font-size:30px;fill:var(--ink)}
+.route .city.hub{font-size:44px;fill:var(--blue)}
+.route .sm{font-family:var(--sans);font-size:14px;fill:var(--text);letter-spacing:.1em}
+.chips{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:36px}
+.chips span{padding:10px 20px;border:1px solid var(--line);border-radius:999px;background:#fff;font-weight:600;color:var(--ink);font-size:.92rem}
+
+/* contact */
+.contact{padding:110px 0;background:#fff}
+.contact .grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:0;border-radius:32px;overflow:hidden;box-shadow:0 50px 90px -40px rgba(7,31,63,.4)}
+.info{background:linear-gradient(160deg,var(--blue),var(--deep) 70%,var(--ink));color:#DFF1FD;padding:60px 50px;position:relative;overflow:hidden}
+.info::after{content:"";position:absolute;right:-90px;bottom:-90px;width:300px;height:300px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:rgba(255,255,255,.08)}
+.info h2{color:#fff;font-size:clamp(2.1rem,3.6vw,3rem)}
+.info ul{list-style:none;margin:34px 0 0;display:grid;gap:22px;position:relative;z-index:1}
+.info li small{display:block;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:#8FD3F7;margin-bottom:2px;font-weight:700}
+.info li a,.info li span{font-size:1.1rem;color:#fff}
+.info li a:hover{text-decoration:underline}
+form{padding:60px 54px;background:var(--foam)}
+form h3{font-size:2rem;margin-bottom:6px}
+form > p{margin-bottom:28px;font-size:.96rem}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-size:.82rem;font-weight:700;color:var(--ink);margin-bottom:6px;letter-spacing:.03em}
+input,select,textarea{width:100%;padding:15px 16px;border:1.5px solid var(--line);border-radius:12px;background:#fff;font:inherit;color:var(--ink);transition:.2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--sky);box-shadow:0 0 0 4px rgba(0,168,240,.15)}
+.field{margin-bottom:16px}
+textarea{min-height:120px;resize:vertical}
+form .btn{width:100%;justify-content:center;margin-top:6px;border:0}
+.note{font-size:.8rem;margin-top:14px;text-align:center}
+#msg{display:none;margin-top:16px;padding:14px;border-radius:12px;background:var(--mist);color:var(--deep);font-weight:600;text-align:center}
+
+/* faq */
+.faq{padding:100px 0;background:var(--foam)}
+.faq .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px}
+details{border-bottom:1px solid var(--line);padding:22px 0}
+details:first-of-type{border-top:2px solid var(--ink)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;font-family:var(--serif);font-size:1.6rem;color:var(--ink);line-height:1.2}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--sans);font-size:1.6rem;color:var(--sky);transition:.25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding-top:12px;max-width:620px}
+
+/* footer */
+footer{background:var(--ink);color:#A9CBE4;padding:80px 0 0}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:50px;padding-bottom:56px}
+.fgrid .logobox{display:inline-block;background:#fff;border-radius:16px;padding:12px 20px;margin-bottom:20px}
+.fgrid .logobox img{height:44px}
+footer h4{font-family:var(--sans);color:#fff;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:18px}
+footer ul{list-style:none;display:grid;gap:10px;font-size:.95rem}
+footer a:hover{color:#fff}
+.legal{border-top:1px solid rgba(255,255,255,.12);padding:24px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.88rem}
+.legal a{color:var(--sky);font-weight:600}
+.legal a:hover{color:#fff;text-decoration:underline}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:1020px){
+  .hero .wrap,.germ .wrap,.why .wrap,.contact .grid,.faq .wrap,.services .intro{grid-template-columns:1fr}
+  .hero{padding-top:44px}
+  .hero-art{max-width:460px;margin:0 auto}
+  .badge.b1{left:-8px}.badge.b2{right:-8px}
+  .line{grid-template-columns:1fr 1fr;row-gap:50px}
+  .line::before{display:none}
+  .index li{grid-template-columns:50px 1fr 140px;grid-template-areas:"n h t" "n p t" "n pr t"}
+  .index .n{grid-area:n}.index h3{grid-area:h}.index p{grid-area:p}.index .thumb{grid-area:t;width:140px}.index .price{grid-area:pr;justify-self:start;text-align:left}
+  .germ .copy{padding:60px 0}
+  .germ .pic{min-height:360px;margin-inline:-24px}
+  .why .sticky{position:static}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .nav ul,.nav .cta{display:none}
+  .burger{display:block}
+  .nav.open ul{display:flex;position:absolute;top:78px;left:0;right:0;background:var(--foam);flex-direction:column;padding:24px;gap:18px;border-bottom:1px solid var(--line)}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  .wrap{width:min(1200px,100% - 36px)}
+  .topbar .wrap>span:last-child{display:none}
+  .line{grid-template-columns:1fr}
+  .index li{grid-template-columns:1fr;grid-template-areas:"n" "h" "p" "t" "pr";gap:10px}
+  .index .thumb{width:100%;max-width:260px}
+  .f2{grid-template-columns:1fr}
+  form,.info{padding:38px 26px}
+  .fgrid{grid-template-columns:1fr}
+  .pledge{grid-template-columns:50px 1fr}
+  .pledge .q{font-size:3rem}
+  .badge.b2{top:30px}
+  .drop-float{width:60px;left:-6px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><span class="dot"></span>Booking now · Free consultation on every job</span>
+    <span><a href="tel:+17808629326">(780) 862-9326</a> &nbsp;·&nbsp; <a href="mailto:speedycleanedmonton@gmail.com">speedycleanedmonton@gmail.com</a></span>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" aria-label="Speedy Clean home"><img class="logo" src="images/logo.png" alt="Speedy Clean" width="142" height="46"></a>
+    <ul>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Speedy</a></li>
+      <li><a href="#areas">Areas</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn-primary cta" href="#contact">Get a free quote</a>
+    <button class="burger" aria-label="Menu" id="burger"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Commercial and residential cleaning · Edmonton, AB</span>
+      <h1>Spotless spaces, <span class="swift"><em>swiftly</em></span> done.</h1>
+      <p class="lead">Speedy Clean keeps Edmonton offices, job sites and homes fresh with quick, careful crews and gentle, eco-minded products. Tell us what needs cleaning and we will sort the rest.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#contact">Get a free quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="tel:+17808629326">Call (780) 862-9326</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>24/7</b><small>Availability</small></div>
+        <div><b>$20/hr</b><small>Residential cleaning</small></div>
+        <div><b>5 cities</b><small>Across the Edmonton region</small></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg class="drop-float" viewBox="0 0 64 80" aria-hidden="true"><defs><linearGradient id="dg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00A8F0"/><stop offset="1" stop-color="#0060F8"/></linearGradient></defs><path d="M32 2C32 2 6 32 6 52a26 26 0 0 0 52 0C58 32 32 2 32 2z" fill="url(#dg)"/><ellipse cx="42" cy="48" rx="7" ry="10" fill="#fff" opacity=".45" transform="rotate(20 42 48)"/></svg>
+      <div class="arch"><img src="images/hero.jpg" alt="Speedy Clean crew cleaning a bright modern office" onerror="this.style.display='none'"></div>
+      <div class="badge b2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><b>Open around the clock</b>By appointment</span></div>
+      <div class="badge b1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Free consultation</b>No pressure, no obligation</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Office cleaning</span><span>Deep cleaning</span><span>Pressure washing</span><span>Carpet cleaning</span><span>Waste management</span><span>Job site cleanup</span><span>New home builds</span><span>Residential cleaning</span>
+    <span>Office cleaning</span><span>Deep cleaning</span><span>Pressure washing</span><span>Carpet cleaning</span><span>Waste management</span><span>Job site cleanup</span><span>New home builds</span><span>Residential cleaning</span>
+  </div>
+</div>
+
+<!-- HOW IT WORKS: timeline -->
+<section class="clock" id="how">
+  <div class="wrap">
+    <div class="head rv">
+      <div>
+        <span class="eyebrow">From hello to handover</span>
+        <h2 style="margin-top:14px">Four quick stops<br>to a <em>clean</em> space.</h2>
+      </div>
+      <p>No long forms and no waiting around. You reach a real person, we look at the space, and the crew shows up when you booked them.</p>
+    </div>
+    <div class="line">
+      <div class="stop rv"><div class="node"><span>1</span></div><span class="time">Any hour</span><h3>Call or message</h3><p>Reach us any time. Tell us about the space and what you need.</p></div>
+      <div class="stop rv"><div class="node"><span>2</span></div><span class="time">Free of charge</span><h3>Quick consultation</h3><p>We talk through the job and give you a clear price, with no surprises.</p></div>
+      <div class="stop rv"><div class="node"><span>3</span></div><span class="time">Your booked slot</span><h3>Crew arrives</h3><p>Experienced cleaners turn up on time with the right treatment for every surface.</p></div>
+      <div class="stop rv"><div class="node"><span>4</span></div><span class="time">Ready to use</span><h3>Handover</h3><p>Your office, site or home is ready as soon as possible, and nothing is damaged.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES: editorial index -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="intro rv">
+      <div>
+        <span class="eyebrow">What we clean</span>
+        <h2 style="margin-top:14px">An <em>index</em> of everything we handle.</h2>
+      </div>
+      <p>From a single office floor to a whole new build, Speedy Clean covers the full range of commercial and residential cleaning. Not listed? Ask, we probably do it.</p>
+    </div>
+    <ul class="index">
+      <li class="rv"><span class="n">01</span><h3>Office cleaning</h3><p>Desks, keyboards, kitchens and washrooms, cleaned thoroughly so your team works in a healthy space.</p><div class="thumb"><img src="images/svc-office.jpg" alt="Clean office workspace" loading="lazy" onerror="this.style.display='none'"></div><div class="price quote">Free quote</div></li>
+      <li class="rv"><span class="n">02</span><h3>Deep and carpet cleaning</h3><p>A full reset for floors, upholstery and hard-to-reach corners using the latest techniques.</p><div class="thumb"><img src="images/svc-deep.jpg" alt="Deep carpet cleaning" loading="lazy" onerror="this.style.display='none'"></div><div class="price quote">Free quote</div></li>
+      <li class="rv"><span class="n">03</span><h3>Pressure washing</h3><p>Entrances, walkways, parking areas and exteriors blasted back to a fresh finish.</p><div class="thumb"><img src="images/svc-pressure.jpg" alt="Pressure washing a concrete walkway" loading="lazy" onerror="this.style.display='none'"></div><div class="price quote">Free quote</div></li>
+      <li class="rv"><span class="n">04</span><h3>Job site cleanup</h3><p>Debris, dust and waste cleared away so your crew can keep moving and the site stays safe.</p><div class="thumb"><img src="images/svc-jobsite.jpg" alt="Job site cleanup" loading="lazy" onerror="this.style.display='none'"></div><div class="price quote">Quote on request</div></li>
+      <li class="rv"><span class="n">05</span><h3>New home builds</h3><p>The final polish before handover, so every surface is spotless on the day the keys change hands.</p><div class="thumb"><img src="images/svc-newbuild.jpg" alt="Freshly cleaned new home interior" loading="lazy" onerror="this.style.display='none'"></div><div class="price quote">Quote on request</div></li>
+      <li class="rv"><span class="n">06</span><h3>Residential cleaning</h3><p>Friendly, reliable home cleaning at a simple hourly rate. Come home to a place that feels new.</p><div class="thumb"><img src="images/svc-home.jpg" alt="Clean bright living room" loading="lazy" onerror="this.style.display='none'"></div><div class="price">$20.00<small>per hour</small></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- GERM STAT -->
+<section class="germ">
+  <div class="wrap">
+    <div class="pic"><img src="images/keyboard.jpg" alt="Close-up of a office keyboard being wiped clean" loading="lazy" onerror="this.style.display='none'"></div>
+    <div class="copy rv">
+      <span class="eyebrow">Did you know</span>
+      <div class="big">7,000+</div>
+      <h2>bacteria can sit on one dirty keyboard.</h2>
+      <p>That is how flu and sickness spread through a workplace. Our modern treatments clean your office efficiently and thoroughly, which helps your team stay healthier, take fewer sick days and get more done.</p>
+      <a class="btn" href="#contact">Book an office clean</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="sticky rv">
+      <span class="eyebrow">Why Speedy Clean</span>
+      <h2 style="margin-top:14px">Quick on the clock, <em>careful</em> with your things.</h2>
+      <p>Fast should never mean careless. Here is what you can count on when we walk through your door.</p>
+      <div class="photo"><img src="images/team.jpg" alt="Friendly Speedy Clean cleaner in a bright hallway" loading="lazy" onerror="this.style.display='none'"></div>
+    </div>
+    <div>
+      <div class="pledge rv"><div class="q">1</div><div><h3>Experienced, qualified cleaners</h3><p>You are hiring people who know their craft. Our cleaners work quickly and efficiently so your space is ready for use as soon as possible.</p></div></div>
+      <div class="pledge rv"><div class="q">2</div><div><h3>Safe on every surface</h3><p>Worried about electricals or other devices? We know the best treatment for each surface and promise that none of our cleaning will damage your items.</p></div></div>
+      <div class="pledge rv"><div class="q">3</div><div><h3>Eco-friendly by habit</h3><p>A bespoke service using up-to-date techniques, with an environmentally friendly attitude built into how we work.</p></div></div>
+      <div class="pledge rv"><div class="q">4</div><div><h3>Honest, cost-effective pricing</h3><p>Free consultation, clear prices and a simple $20 hourly rate for homes. You know the cost before we start.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section class="cover" id="areas">
+  <div class="wrap">
+    <span class="eyebrow">Where we work</span>
+    <h2>One crew, five <em>communities</em> across the Edmonton region.</h2>
+    <p>We travel to you. Wherever you are around Edmonton, a Speedy Clean crew is not far away.</p>
+    <div class="route rv">
+      <svg viewBox="0 0 980 340" role="img" aria-label="Service area map linking Edmonton, Fort Saskatchewan, St. Albert, Morinville and Leduc">
+        <defs><linearGradient id="rg" x1="0" x2="1"><stop offset="0" stop-color="#00A8F0"/><stop offset="1" stop-color="#0060F8"/></linearGradient></defs>
+        <path d="M90 230 C 220 120, 330 120, 490 180 S 760 260, 890 110" fill="none" stroke="url(#rg)" stroke-width="3" stroke-dasharray="3 12" stroke-linecap="round"/>
+        <path d="M250 70 C 330 110, 420 150, 490 180" fill="none" stroke="url(#rg)" stroke-width="3" stroke-dasharray="3 12" stroke-linecap="round"/>
+        <path d="M490 180 C 520 250, 560 290, 600 305" fill="none" stroke="url(#rg)" stroke-width="3" stroke-dasharray="3 12" stroke-linecap="round"/>
+        <g fill="#fff" stroke="#0060F8" stroke-width="4">
+          <circle cx="90" cy="230" r="11"/><circle cx="250" cy="70" r="11"/><circle cx="890" cy="110" r="11"/><circle cx="600" cy="305" r="11"/>
+        </g>
+        <circle cx="490" cy="180" r="30" fill="#0060F8" opacity=".15"/>
+        <circle cx="490" cy="180" r="17" fill="#0060F8"/><circle cx="490" cy="180" r="6" fill="#fff"/>
+        <text class="city" x="90" y="272" text-anchor="middle">Morinville</text><text class="sm" x="90" y="294" text-anchor="middle">NORTH</text>
+        <text class="city" x="250" y="48" text-anchor="middle">St. Albert</text>
+        <text class="city hub" x="490" y="140" text-anchor="middle">Edmonton</text><text class="sm" x="490" y="226" text-anchor="middle">HOME BASE</text>
+        <text class="city" x="890" y="84" text-anchor="middle">Fort Saskatchewan</text>
+        <text class="city" x="600" y="338" text-anchor="middle">Leduc</text>
+      </svg>
+    </div>
+    <div class="chips"><span>Edmonton</span><span>Fort Saskatchewan</span><span>St. Albert</span><span>Morinville</span><span>Leduc</span></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="grid">
+      <div class="info">
+        <span class="eyebrow" style="color:#8FD3F7">Let us clean it</span>
+        <h2 style="margin-top:14px">Tell us what needs a <em style="color:#8FD3F7">shine</em>.</h2>
+        <ul>
+          <li><small>Call</small><a href="tel:+17808629326">(780) 862-9326</a></li>
+          <li><small>Email</small><a href="mailto:speedycleanedmonton@gmail.com">speedycleanedmonton@gmail.com</a></li>
+          <li><small>Find us</small><a href="https://maps.google.com/?q=14105%2082nd%20St%20NW%2C%20Edmonton%2C%20AB%20T5E2V7" target="_blank" rel="noopener">14105 82 St NW, Edmonton, AB T5E 2V7</a></li>
+          <li><small>Hours</small><span>24/7 availability · By appointment only</span></li>
+        </ul>
+      </div>
+      <form id="quote" novalidate>
+        <h3>Request a free quote</h3>
+        <p>We reply fast. Share a few details and we will take it from there.</p>
+        <div class="f2">
+          <div class="field"><label for="name">Your name</label><input id="name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="field"><label for="email">Your email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label for="svc">What do you need?</label>
+          <select id="svc" name="service"><option>Office cleaning</option><option>Deep or carpet cleaning</option><option>Pressure washing</option><option>Job site cleanup</option><option>New home build</option><option>Residential cleaning</option><option>Something else</option></select></div>
+        <div class="field"><label for="req">Tell us about your request</label><textarea id="req" name="message"></textarea></div>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <div id="msg" role="status">Thanks! Your email app should open with the details ready to send.</div>
+        <p class="note">We only use your details to reply to this request.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Good to know</span>
+      <h2 style="margin-top:14px">Quick <em>answers</em>.</h2>
+    </div>
+    <div>
+      <details open><summary>How much does cleaning cost?</summary><p>Residential cleaning is $20.00 per hour. Job site cleanup and new home builds are priced per job, so we quote after a free consultation. Commercial work is quoted to suit the size of your space.</p></details>
+      <details><summary>Which areas do you cover?</summary><p>Edmonton, Fort Saskatchewan, St. Albert, Morinville and Leduc. If you are nearby and not sure, just ask.</p></details>
+      <details><summary>How do I book?</summary><p>Call (780) 862-9326 or send the form above. We work by appointment, are available 24/7, and the consultation is free.</p></details>
+      <details><summary>Is it safe for electronics and delicate surfaces?</summary><p>Yes. Our cleaners know the best treatment for each surface, and we promise that none of our cleaning treatments will damage your items.</p></details>
+      <details><summary>What kinds of commercial cleaning do you offer?</summary><p>Office cleaning, deep cleaning, pressure washing, waste management, carpet cleaning and more. Every service is cost-effective, and our cleaners are fully qualified.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="logobox" href="#top"><img src="images/logo.png" alt="Speedy Clean"></a>
+        <p style="max-width:300px">Fast, careful commercial and residential cleaning across Edmonton and nearby communities.</p>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="#how">How it works</a></li><li><a href="#services">Services</a></li><li><a href="#why">Why Speedy</a></li><li><a href="#areas">Areas</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h4>Services</h4><ul><li>Office cleaning</li><li>Deep and carpet cleaning</li><li>Pressure washing</li><li>Job site cleanup</li><li>New home builds</li><li>Residential cleaning</li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:+17808629326">(780) 862-9326</a></li><li><a href="mailto:speedycleanedmonton@gmail.com">speedycleanedmonton@gmail.com</a></li><li>14105 82 St NW<br>Edmonton, AB T5E 2V7</li></ul></div>
+    </div>
+    <div class="legal">
+      <span>© <span id="yr">2026</span> Speedy Clean. All rights reserved.</span>
+      <span>Design by <a href="https://www.dallaswebagency.us/" target="_blank" rel="noopener">Dallas Web Agency</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  var nav=document.getElementById('nav');
+  document.getElementById('burger').addEventListener('click',function(){nav.classList.toggle('open')});
+  nav.querySelectorAll('ul a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open')})});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  document.getElementById('quote').addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=e.target,n=f.name.value.trim(),em=f.email.value.trim();
+    if(!n||!em){f.reportValidity&&0;(!n?f.name:f.email).focus();return}
+    var body='Name: '+n+'\nPhone: '+f.phone.value+'\nEmail: '+em+'\nService: '+f.service.value+'\n\n'+f.message.value;
+    window.location.href='mailto:speedycleanedmonton@gmail.com?subject='+encodeURIComponent('Quote request from '+n)+'&body='+encodeURIComponent(body);
+    document.getElementById('msg').style.display='block';
+  });
+})();
+</script>
+</body>
+</html>
